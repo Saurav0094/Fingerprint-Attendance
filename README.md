@@ -95,13 +95,19 @@ You can also copy the `/libraries` folder manually.
 ## 🚀 How to Run
 
 1. Connect components as per the circuit diagram.
-2. Format and insert a micro SD card.
-3. Open the `.ino` file in Arduino IDE.
-4. Select your board (`Arduino UNO`) and port.
-5. Upload the code.
-6. Use the Enroll button to register a fingerprint.
-7. Use the Attendance button to mark presence.
-8. Data will be saved to `attendance_log.txt`.
+2. Connect usb to computer port.
+3. Download and install XAMMP app.
+4. Download biometricattendance folder.
+5. Paste this folder in below given path
+6. path-> c/xammp/htdocs/paste her.
+7. Open the `.ino` file in Arduino IDE.
+8. Select your board (`NODE MCU ESP8266`) and port.
+9. Upload the code.
+10. start xammp-> start apcahe-> start mysql.
+11. Open web browser and paste the link given in link file one by one in new TAB.
+13. Use the Enroll button to register a fingerprint.
+14. Use the Attendance button to mark presence.
+15. Data will be saved to `attendance_log.txt`.
 
 ---
 
