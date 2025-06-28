@@ -77,6 +77,8 @@ This project is an IoT-based **Fingerprint Attendance System** using **NodeMCU E
 3. The data is updated to Google Sheets or Firebase.
 4. OLED shows the user name and attendance status.
 
+
+---
 ## 📂 Folder Structure
 
 ```
