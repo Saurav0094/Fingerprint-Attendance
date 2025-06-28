@@ -88,7 +88,7 @@ This project is an IoT-based **Fingerprint Attendance System** using **NodeMCU E
     ├── Adafruit_Fingerprint
     ├── Adafruit_SSD1306
     └── FirebaseESP8266
----
+```
 
 ## 🔧 Libraries to Install
 
