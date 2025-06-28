@@ -97,7 +97,7 @@ You can also copy the `/libraries` folder manually.
 1. Connect components as per the circuit diagram.
 2. Connect usb to computer port.
 3. Download and install XAMMP app.
-4. Download biometricattendance folder.
+4. Download biometricattendance folder present in repository.
 5. Paste this folder in below given path
 6. path-> c/xammp/htdocs/paste her.
 7. Open the `.ino` file in Arduino IDE.
