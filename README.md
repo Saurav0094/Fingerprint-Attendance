@@ -98,8 +98,8 @@ You can also copy the `/libraries` folder manually.
 2. Connect usb to computer port.
 3. Download and install XAMMP app.
 4. Download biometricattendance folder present in repository.
-5. Paste this folder in below given path
-6. path-> c/xammp/htdocs/paste her.
+5. Paste this folder in below given path:-
+6. path-> c/xammp/htdocs/paste here.
 7. Open the `.ino` file in Arduino IDE.
 8. Select your board (`NODE MCU ESP8266`) and port.
 9. Upload the code.
