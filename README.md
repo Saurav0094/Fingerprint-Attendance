@@ -8,7 +8,7 @@ This project is a **biometric attendance system** built with **Arduino UNO**, **
 
 ## 📸 Demo
 
-![Demo](https://how2electronics.com/wp-content/uploads/2022/10/Fingerprint-Biometric-Attendance-System-Arduino-R307-Sensor-Display-SD-Card.jpg)
+![Demo]https://drive.google.com/file/d/1USk8gYZwMXi_RyGRiKQXjLSZ6HWeV8O4/view?usp=drive_link
 
 ---
 
@@ -77,10 +77,6 @@ Fingerprint-Attendance/
 │ ├── Adafruit_SSD1306/
 └── README.md
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🔧 Libraries to Install
@@ -117,9 +113,6 @@ Attendance Marked: 2025-06-28 10:32:45
 Name: Finger_1
 Attendance Marked: 2025-06-28 10:35:12
 
-yaml
-Copy
-Edit
 
 ---
 
