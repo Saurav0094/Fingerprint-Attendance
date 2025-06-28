@@ -41,8 +41,8 @@ This project is a **biometric attendance system** built with **Arduino UNO**, **
 |------------|-------------|
 | VCC        | 5V          |
 | GND        | GND         |
-| TX         | D3          |
-| RX         | D2          |
+| TX         | D5/D6       |
+| RX         | D6/D5       |
 
 ### 🔹 OLED Display (I2C)
 
