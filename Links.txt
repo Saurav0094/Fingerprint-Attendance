@@ -1,0 +1,4 @@
+localhost/biometricattendance/install.php
+
+
+localhost/biometricattendance/index.php
