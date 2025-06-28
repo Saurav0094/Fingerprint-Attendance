@@ -107,8 +107,7 @@ Make sure to install the following libraries via Arduino Library Manager:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/esp8266-fingerprint-attendance.git
-cd esp8266-fingerprint-attendance
+https://github.com/Saurav0094/Fingerprint-Attendance.git
 ```
 
 ### 2. Arduino IDE Setup
