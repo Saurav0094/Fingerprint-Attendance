@@ -85,8 +85,10 @@ Make sure to install the following libraries via Arduino Library Manager:
 
 - Adafruit Fingerprint Sensor Library
 - Adafruit SSD1306
-- Adafruit GFX
-- SD
+- SSD1306
+- ThingESP
+- Adafruit GFX  
+
 
 You can also copy the `/libraries` folder manually.
 
