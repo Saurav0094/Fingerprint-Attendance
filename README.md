@@ -2,7 +2,9 @@
 A beginner IoT project using Arduino/NodeMCU, jumper wires, and R307 sensors. Includes wiring and source code.
 # 🔐 Fingerprint Biometric Attendance System using Arduino
 
-This project is a **biometric attendance system** built with **Arduino UNO**, **R307 fingerprint sensor**, **0.96” OLED display**, and an **SD card module**. It allows users to enroll fingerprints and mark attendance, which is logged with timestamps on the SD card. Ideal for basic biometric attendance tracking in schools, offices, and labs.
+# IoT Biometric Fingerprint Attendance System using ESP8266
+
+This project is an IoT-based **Fingerprint Attendance System** using **NodeMCU ESP8266**, **R307 Fingerprint Sensor**, and **OLED Display**. It allows you to capture attendance data via biometric fingerprint and store it in a **Google Sheet** or **Google Firebase** in real-time through Wi-Fi. Ideal for basic biometric attendance tracking in schools, offices, and labs.
 
 ---
 
@@ -11,25 +13,28 @@ This project is a **biometric attendance system** built with **Arduino UNO**, **
 ![Demo]https://drive.google.com/file/d/1USk8gYZwMXi_RyGRiKQXjLSZ6HWeV8O4/view?usp=drive_link
 
 ---
-
 ## 🧰 Components Required
 
-- Arduino UNO
-- R307 Fingerprint Sensor
-- OLED Display (0.96” I2C)
-- SD Card Module + Micro SD Card
-- Push Buttons (x2)
-- Jumper Wires & Breadboard
+| Component | Quantity |
+|----------|----------|
+| NodeMCU ESP8266 | 1 |
+| R307 Fingerprint Sensor | 1 |
+| OLED Display (0.96" I2C SSD1306) | 1 |
+| Jumper Wires | As needed |
+| Breadboard | 1 |
+| Power Supply / USB Cable | 1 |
 
 ---
 
-## 🗂️ Project Features
+## 🚀Project Features
 
-- Fingerprint Enrollment & Matching
-- OLED display for status
-- Real-time attendance logging
-- Stores data in `attendance_log.txt` on SD card
-- Button-controlled actions for Enroll & Mark Attendance
+- 📡 Wi-Fi based attendance tracking
+- 🔒 Biometric authentication using R307 sensor
+- 📊 Real-time data upload to Google Sheets or Firebase
+- 📺 0.96" OLED display for live status and feedback
+- 💾 Fingerprint enrollment and ID mapping
+- 🌐 Web-friendly attendance data tracking
+- Downloadable `attendance_log.xlsx` excel file> 
 
 ---
 
@@ -65,18 +70,22 @@ This project is a **biometric attendance system** built with **Arduino UNO**, **
 | CS     | D10         |
 
 ---
+## 🔧 How It Works
 
-## 📁 Project Structure
+1. The R307 sensor scans and matches fingerprints.
+2. If a match is found, the NodeMCU sends data via Wi-Fi.
+3. The data is updated to Google Sheets or Firebase.
+4. OLED shows the user name and attendance status.
 
-Fingerprint-Attendance/
-├── Fingerprint_Attendance.ino # Arduino sketch
-├── attendance_log.txt # Sample log from SD card
-├── /libraries/ # Include required libraries
-│ ├── Adafruit_Fingerprint/
-│ ├── Adafruit_GFX/
-│ ├── Adafruit_SSD1306/
-└── README.md
+## 📂 Folder Structure
 
+```
+├── Fingerprint_Attendance.ino
+├── README.md
+└── libraries/
+    ├── Adafruit_Fingerprint
+    ├── Adafruit_SSD1306
+    └── FirebaseESP8266
 ---
 
 ## 🔧 Libraries to Install
@@ -90,9 +99,46 @@ Make sure to install the following libraries via Arduino Library Manager:
 - Adafruit GFX  
 
 
-You can also copy the `/libraries` folder manually.
-
 ---
+## 🛠️ Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/esp8266-fingerprint-attendance.git
+cd esp8266-fingerprint-attendance
+```
+
+### 2. Arduino IDE Setup
+
+- Install **ESP8266 board package** via Board Manager
+- Install required libraries:
+  - `Adafruit_GFX`
+  - `Adafruit_SSD1306`
+  - `Adafruit_Fingerprint`
+  - `ESP8266WiFi`
+  - `FirebaseESP8266` (if using Firebase)
+
+### 3. Upload the Code
+
+- Open the `.ino` file from the repository
+- Enter your **Wi-Fi credentials**
+- Enter your **Firebase/Google Sheet API keys** (if applicable)
+- Select the correct **board (NodeMCU 1.0)** and COM port
+- Upload the code
+
+### 4. Enroll Fingerprints
+
+- The serial monitor will guide you through fingerprint enrollment.
+- Each fingerprint is assigned a unique ID.
+
+## 📈 Firebase / Google Sheet Setup/ Web setup
+- Start XAMMP.
+- start apache and mysql in XAMMP.
+- Open any web browser and paste 1st link given in links.txt file.
+- Paste 2nd link and it would take u to web page
+- Now you are ready to go.
+
 
 ## 🚀 How to Run
 
