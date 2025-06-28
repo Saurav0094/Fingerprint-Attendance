@@ -16,8 +16,8 @@
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 SoftwareSerial mySerial(D5,D6);
 Adafruit_Fingerprint finger = Adafruit_Fingerprint(&mySerial);
-const char *ssid = "Satyam";
-const char *password = "satyam11";
+const char *ssid = "Saurav";
+const char *password = "saurav11";
 String postData ; 
 String link = "http://192.168.165.186/biometricattendance/getdata.php"; 
 int FingerID = 0;     
